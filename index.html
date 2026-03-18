@@ -624,8 +624,214 @@ body {
         <p>De tool fungeert als een snelle, betrouwbare collega die relevante wetgeving, gemeentelijk beleid en de Doorbraakmethode toepast en vertaalt naar een concreet maatwerkvoorstel.</p>
         <p>Geen losse documenten of tijdrovend zoekwerk, maar direct een onderbouwd antwoord dat helpt om sneller en met meer zekerheid tot maatwerk te komen. De professional houdt de regie; de tool ondersteunt met de onderbouwing.</p>
       </div>
+    </div>
+    <!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weinig ervaring met AI?</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #d8eef5;
+      --purple: #4b2d8f;
+      --purple-light: #6b4dc4;
+      --green-box: #d4ede3;
+      --green-accent: #3d8b6e;
+      --green-dark: #2a6e56;
+      --text-dark: #1a1a2e;
+      --text-mid: #3a3a5c;
+      --text-muted: #6a6a8a;
+      --white: #ffffff;
+    }
+
+    body {
+      background: var(--bg);
+      font-family: 'DM Sans', sans-serif;
+      color: var(--text-dark);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 60px 24px;
+    }
+
+    /* ── SECTION WRAPPER ── */
+    .section {
+      width: 100%;
+      max-width: 860px;
+    }
+
+    /* ── MAIN GREEN BOX ── */
+    .green-box {
+      background: var(--green-box);
+      border-radius: 20px;
+      padding: 52px 56px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 40px;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* subtle decorative circle */
+    .green-box::before {
+      content: '';
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: rgba(61, 139, 110, 0.08);
+      top: -80px;
+      right: -60px;
+      pointer-events: none;
+    }
+    .green-box::after {
+      content: '';
+      position: absolute;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: rgba(61, 139, 110, 0.06);
+      bottom: -40px;
+      left: 40px;
+      pointer-events: none;
+    }
+
+    /* ── LABEL ── */
+    .label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--green-dark);
+      margin-bottom: 12px;
+    }
+
+    /* ── HEADING ── */
+    .heading {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(26px, 3vw, 34px);
+      font-weight: 400;
+      line-height: 1.2;
+      color: var(--text-dark);
+      margin-bottom: 16px;
+    }
+
+    .heading em {
+      font-style: italic;
+      color: var(--green-dark);
+    }
+
+    /* ── BODY TEXT ── */
+    .body-text {
+      font-size: 15.5px;
+      line-height: 1.65;
+      color: var(--text-mid);
+      max-width: 480px;
+    }
+
+    /* ── CTA BUTTON ── */
+    .cta-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 12px;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-btn {
+      background: var(--green-dark);
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 16px 30px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.2s, transform 0.15s;
+      line-height: 1.3;
+      text-align: center;
+    }
+    .cta-btn:hover {
+      background: var(--green-accent);
+      transform: translateY(-2px);
+    }
+
+    .cta-note {
+      font-size: 12.5px;
+      color: var(--green-dark);
+      opacity: 0.75;
+      text-align: right;
+    }
+
+    /* ── PILL TAGS ── */
+    .pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 20px;
+    }
+
+    .pill {
+      background: rgba(61, 139, 110, 0.14);
+      border: 1px solid rgba(61, 139, 110, 0.25);
+      color: var(--green-dark);
+      border-radius: 100px;
+      padding: 5px 14px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 620px) {
+      .green-box {
+        grid-template-columns: 1fr;
+        padding: 36px 28px;
+      }
+      .cta-wrap {
+        align-items: flex-start;
+      }
+      .cta-note {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="section">
+    <div class="green-box">
+
+      <div class="content">
+        <p class="label">Geen drempel</p>
+        <h2 class="heading">Weinig ervaring met AI?<br><em>Geen probleem.</em></h2>
+        <p class="body-text">
+          Wij bieden een gerichte AI-training aan, zodat professionals weten wanneer en hoe zij deze tool effectief en verantwoord kunnen inzetten. Net als bij autorijden geldt: eerst het rijbewijs, dan de weg op.
+        </p>
+        <div class="pills">
+          <span class="pill">Praktijkgericht</span>
+          <span class="pill">Inclusief begeleiding</span>
+          <span class="pill">Verantwoord gebruik</span>
+        </div>
+      </div>
+
+      <div class="cta-wrap">
+        <button class="cta-btn">Meer over<br>de training →</button>
+        <span class="cta-note">Incompany of open inschrijving</span>
+      </div>
 
     </div>
+  </section>
+</body>
+</html>
   </div>
 </section>
 <h2>Weinig ervaring met AI? Geen probleem.</h2>
